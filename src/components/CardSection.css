@@ -1,0 +1,81 @@
+/* CardSection.css */
+.custom-card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.custom-card .card-body {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.custom-card .card-body .icon {
+    font-size: 32px;
+    color: white;
+    padding: 20px;
+    border-radius: 70%;
+    
+    transition: background-color 0.3s ease;
+}
+
+.custom-card .card-body .card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.custom-card .card-body .card-text {
+    font-size: 16px;
+    color: #6c757d;
+}
+
+.custom-card:hover .card-body {
+    background-color: var(--hover-bg-color);
+}
+
+/* .custom-card:hover .card-body .icon {
+    background-color: white;
+    color: var(--icon-bg-color);
+} */
+
+/* Define the colors for each card */
+.custom-card-people .card-body {
+    --icon-bg-color: #6f42c1; /* Purple for People */
+    --hover-bg-color: #f0e6ff; /* Light purple */
+}
+
+.custom-card-place .card-body {
+    --icon-bg-color: #28a745; /* Green for Place */
+    --hover-bg-color: #e6ffee; /* Light green */
+}
+
+.custom-card-product .card-body {
+    --icon-bg-color: #dc3545; /* Red for Product */
+    --hover-bg-color: #ffe6e6; /* Light red */
+}
+
+.custom-card-program .card-body {
+    --icon-bg-color: #17a2b8; /* Blue for Program */
+    --hover-bg-color: #e6f7ff; /* Light blue */
+}
+
+.text-purple {
+    color: #8e44ad !important;
+  }
+  .text-green {
+    color: #28a745 !important;
+  }
+  .text-red {
+    color: #dc3545 !important;
+  }
+  .text-blue {
+    color: #17a2b8 !important;
+  }

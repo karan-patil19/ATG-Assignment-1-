@@ -1,0 +1,274 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.text-purple {
+  color: #8e44ad !important;
+}
+
+.custom-rounded-icon {
+  background-color: #8e44ad;
+  color: white;
+  border-radius: 50%;
+  padding: 0.25rem;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+  min-width: 10rem;
+  padding: 0;
+  margin: 0;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+  margin-top: 1rem; /* Adjusted margin-top */
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+/* Additional styling */
+.form-control {
+  position: relative;
+  padding-left: 40px; /* To avoid text overlapping with the icon */
+}
+
+.btn-link {
+  text-decoration: none;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.min-vh-100 {
+  min-height: 100vh;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-light {
+  background-color: #f8f9fa;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-content {
+  flex-grow: 1;
+  margin-right: 16px;
+}
+
+.custom-height {
+  height: 600px;
+}
+
+.side-content {
+  width: 100%;
+  max-width: 350px;
+}
+
+.display-4 {
+  font-size: 2.5rem;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.text-muted {
+  color: #6c757d;
+}
+
+.text-dark {
+  color: #343a40;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.top-50 {
+  top: 50%;
+}
+
+.translate-middle-y {
+  transform: translateY(-50%);
+}
+
+.me-2 {
+  margin-right: 0.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.ps-5 {
+  padding-left: 3rem;
+}
+
+.p-4 {
+  padding: 1.5rem;
+}
+
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.btn-outline-primary {
+  color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.btn-outline-dark {
+  color: #343a40;
+  border-color: #343a40;
+}
+
+.btn-outline-dark:hover {
+  background-color: #343a40;
+  color: white;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .d-flex {
+    flex-direction: column;
+  }
+
+  .main-content {
+    margin-right: 0;
+  }
+
+  .side-content {
+    margin-top: 1rem;
+  }
+
+  .main-content,
+  .side-content {
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    position: static;
+    float: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+  }
+
+  .dropdown-item {
+    padding: 0.5rem 1rem;
+  }
+
+  .form-control {
+    padding-left: 2.5rem;
+  }
+
+  .position-absolute {
+    position: static;
+  }
+
+  .custom-height {
+    height: auto; /* Adjust height for better responsiveness */
+  }
+
+  .display-4 {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+
+  .btn-outline-primary, .btn-outline-dark, .btn-primary {
+    width: 100%; /* Full width buttons for smaller screens */
+    padding: 0.75rem; /* Adjust padding for better touch target size */
+  }
+}
+
+@media (max-width: 576px) {
+  .p-4 {
+    padding: 1rem;
+  }
+
+  .main-content, .side-content {
+    padding: 0;
+  }
+
+  .display-4 {
+    font-size: 1.75rem; /* Further adjust font size for very small screens */
+  }
+
+  .btn-outline-primary, .btn-outline-dark, .btn-primary {
+    padding: 0.5rem; /* Further adjust padding for very small screens */
+  }
+}
